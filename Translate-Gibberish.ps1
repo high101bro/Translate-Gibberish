@@ -1,6 +1,12 @@
-﻿<#
+<#
     .PARAMETER Dictionary
     The absolute location of the dictionary or it's relative path to the script
+
+    .DESCRIPTION
+    This PowerShell script translates english into gibberish using a populated dictionary. 
+
+    .SYNOPSIS
+    This script was written in collaboration with my daughter for fun and training. This PowerShell script translates english into gibberish using a populated dictionary. The script will prompt the user for the inag tralation if the word(s) is/are not in the dictionary. The translated pair get updated in an XML file dictionary.
 
     .PARAMETER Message
     The message to translate into gibberish
@@ -9,8 +15,10 @@
     The word to update
 
     .EXAMPLE
-    ./Translate-Gibberish.ps1 -UdpateWord hello:hinagellinago
+    ./Translate-Gibberish.ps1 -Message 'Hello World!'
 
+    .EXAMPLE
+    ./Translate-Gibberish.ps1 -UdpateWord hello:hinagellinago
 #>
 [CmdletBinding()]
 param(
